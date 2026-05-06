@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Syne:wght@400;600;800&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: #030712;
+  color: #e2e8f0;
+  font-family: 'JetBrains Mono', 'Fira Mono', monospace;
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: #0f172a; }
+::-webkit-scrollbar-thumb { background: #334155; border-radius: 2px; }
+
+input, select, button { font-family: inherit; }
+input:focus { outline: none; border-color: #7c3aed !important; }
+
+@keyframes spin   { to { transform: rotate(360deg); } }
+@keyframes pulse  { 0%,100%{opacity:1} 50%{opacity:.4} }
+@keyframes fadeIn { from{opacity:0;transform:translateY(8px)} to{opacity:1;transform:translateY(0)} }
+
+.fade-in { animation: fadeIn 0.3s ease forwards; }
+.stock-row:hover { background: #ffffff0a !important; cursor: pointer; }
+button { cursor: pointer; transition: opacity 0.15s; }
+button:hover { opacity: 0.85; }
