@@ -6,10 +6,7 @@ import { useState, useEffect, useCallback, useRef } from "react";
 const API_BASE = import.meta.env.VITE_API_URL || "/api";
 
 // Login credentials (change before deploying!)
-const USERS = {
-  admin: "xetra2026",
-  demo:  "demo123",
-};
+const USERS = { VijayParakramee: "LetsDoTrading@AI"};
 
 // ─── HELPERS ──────────────────────────────────────────────────────────────────
 const recColor = r => ({
